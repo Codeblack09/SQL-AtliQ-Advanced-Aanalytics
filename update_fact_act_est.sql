@@ -28,9 +28,3 @@ cte3 AS (  -- New CTE to calculate and store rnk before filtering
 SELECT * 
 FROM cte3 
 WHERE rnk <= 2;
-
-select * from fact_act_est;
-
-update fact_act_est
-set sold_quantity = 0
-where sold_quantity is null;
